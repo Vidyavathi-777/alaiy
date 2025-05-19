@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #121212;
+        color: #fff;
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        /* border-bottom: 2px solid #00cc8e; */
+        box-shadow: 0 0px 16px rgba(0, 204, 142, 0.4);
+        padding: 30px;
+        color: #00cc8e;
+        background-color: #1a1a1a;
+    }
+
+    .projects-description {
+
+        text-align: center;
+        font-size: 1.1rem;
+        color: #bbb;
+        margin-top: 20px;
+        padding: 0 20px;
+        line-height: 1.6;
+    }
+
+    .projects-section {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .project {
+        padding: 20px;
+        width: 300px;
+        height: fit-content;
+        text-align: center;
+        border: 1px solid #00cc8e;
+        background-color: #1e1e1e;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    .project:hover {
+        transform: translate(-10px);
+        box-shadow: 0 8px 16px rgba(0, 204, 142, 0.4);
+    }
+
+    .project.active {
+        border: 2px solid #00cc8e;
+        box-shadow: 0 0 20px rgba(0, 204, 142, 0.6);
+    }
+
+    .project h3 {
+        font-size: 1.3rem;
+        color: #00cc8e;
+        margin-bottom: 10px;
+    }
+
+    .project p {
+        margin-top: 10px;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #ccc;
+    }
+
+    .related-projects-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto 60px;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.5s ease;
+    }
+
+    .related-projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 30px 20px;
+        border: 1px solid #00cc8e;
+        border-radius: 12px;
+        background-color: #1a1a1a;
+    }
+
+    .related-project {
+        width: 280px;
+        padding: 20px;
+        background-color: #242424;
+        border-radius: 8px;
+        border: 1px solid #333;
+        transition: transform 0.3s ease;
+    }
+
+    .related-project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 204, 142, 0.3);
+    }
+
+    .related-project h4 {
+        color: #00cc8e;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .related-project p {
+        color: #bbb;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .tech-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    .tech-tag {
+        background-color: #333;
+        color: #00cc8e;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+    }
+
+    .view-project {
+        display: inline-block;
+        margin-top: 10px;
+        background-color: #00cc8e;
+        color: #121212;
+        padding: 8px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .view-project:hover {
+        background-color: #00e6a1;
+    }
+
+    .back-btn {
+        position: relative;
+        bottom: 30px;
+        left: 20px;
+
+    }
+
+    .back-btn i:hover {
+        background-color: #00e6a1;
+
+        color: black;
+
+
+    }
+
+    .back-btn i {
+        border: 1px solid #00cc8e;
+        padding: 10px;
+        border-radius: 50px;
+
+
+    }
+
+
+
+    @media (max-width: 768px) {
+        .projects-section {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project {
+            width: 90%;
+        }
+
+        .related-project {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div>
+        <h2>My Projects</h2>
+        <p class="projects-description">
+            A curated collection of my web development projects showcasing skills in frontend, backend, and full stack
+            technologies. Click on any category to explore more.
+        </p>
+        <div class="projects-section">
+            <div class="project" data-category="frontend">
+                <h3>Frontend Projects</h3>
+                <p>Responsive and visually appealing websites built with HTML, CSS, JavaScript, and modern libraries
+                    like React.js. Focused on user experience and performance.</p>
+            </div>
+            <div class="project" data-category="backend">
+                <h3>Backend Projects</h3>
+                <p>Robust server-side applications using Node.js, Express, and MongoDB. Includes RESTful APIs,
+                    authentication systems, and database integration.</p>
+            </div>
+            <div class="project" data-category="fullstack">
+                <h3>Full Stack Projects</h3>
+                <p>End-to-end web applications that combine frontend and backend technologies. Includes complete
+                    eCommerce apps, dashboards, and user authentication.</p>
+            </div>
+            <div class="project" data-category="mobile">
+                <h3>Mobile App</h3>
+                <p>Cross-platform mobile apps with modern UI, smooth performance, and built using React Native or
+                    Flutter.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="related-projects-container" id="frontend">
+        <div class="related-projects">
+            <div class="related-project">
+                <h4>Weather App</h4>
+                <p>Real-time weather app built with React.js using external APIs. Includes location search, temperature,
+                    and condition details in a sleek UI.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">Javascript</span>
+                    <span class="tech-tag">React JS</span>
+                    <span class="tech-tag">Open Weather API</span>
+                </div>
+                <a href="#" class="view-project">View Project</a>
+            </div>
+            <div class="related-project">
+                <h4>Recipe Search App</h4>
+                <p>React-based recipe finder app that fetches and displays recipes based on user input. Includes
+                    ingredients, instructions, and images in a clean UI.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">Javascript</span>
+                    <span class="tech-tag">React JS</span>
+                    <span class="tech-tag">Edamam API</span>
+                </div>
+                <a href="#" class="view-project">View Project</a>
+            </div>
+            <div class="related-project">
+                <h4>Chef Claude</h4>
+                <p>A smart React-based Chef assistant using AI to suggest recipes, answer cooking questions, and guide
+                    users through meal prep with a conversational interface.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">Javascript</span>
+                    <span class="tech-tag">React JS</span>
+                    <span class="tech-tag">Hugging API</span>
+                </div>
+                <a href="#" class="view-project">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="related-projects-container" id="backend">
+        <div class="related-projects">
+            <div class="related-project">
+                <h4>Ecommerce API</h4>
+                <p>A scalable eCommerce backend API with features like JWT authentication, product and order management,
+                    and secure payment handling using Node.js and Express.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Node JS</span>
+                    <span class="tech-tag">Express JS</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">CLoudinary</span>
+                    <span class="tech-tag">Resend Mail API</span>
+                    <span class="tech-tag">Stripe API</span>
+                </div>
+                <a href="#" class="view-project">View Project</a>
+            </div>
+            <div class="related-project">
+                <h4>Ecommerce API</h4>
+                <p>A scalable eCommerce backend API with features like JWT authentication, product and order management,
+                    and secure payment handling using Node.js and Express.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Node JS</span>
+                    <span class="tech-tag">Express JS</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Prisma ORM</span>
+                </div>
+                <a href="#" class="view-project">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="related-projects-container" id="fullstack">
+        <div class="related-projects">
+            <div class="related-project">
+                <h4>Grocerly Website</h4>
+                <p>Grocerly is a responsive full-stack grocery eCommerce app featuring product management, user
+                    authentication, dynamic cart/wishlist, and admin dashboards—built with React, Node.js, Express, and
+                    MongoDB.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">React JS</span>
+                    <span class="tech-tag">Node JS</span>
+                    <span class="tech-tag">Express JS</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">CLoudinary</span>
+                    <span class="tech-tag">Resend Mail API</span>
+                </div>
+                <a href="#" class="view-project">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="related-projects-container" id="mobile">
+        <div class="related-projects">
+            <div class="related-project">
+                <h4>Add to Cart</h4>
+                <p>A lightweight mobile-friendly Add to Cart app developed using HTML, CSS, JavaScript, and Firebase.
+                </p>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JS</span>
+                    <span class="tech-tag">FirebaseDB</span>
+                </div>
+                <a href="#" class="view-project">View Project</a>
+            </div>
+        </div>
+    </div>
+    <div class="back-btn" onclick="window.location.href='index.html'">
+        <i class="fa-solid fa-arrow-left"></i>
+    </div>
+
+</body>
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+       
+        const projectBoxes = document.querySelectorAll('.project');
+
+        projectBoxes.forEach(function (box) {
+            box.addEventListener('click', function () {
+                const category = box.getAttribute('data-category'); 
+                const container = document.getElementById(category); 
+
+               
+                const isActive = box.classList.contains('active');
+
+                projectBoxes.forEach(function (b) {
+                    b.classList.remove('active');
+                });
+
+        
+                const allContainers = document.querySelectorAll('.related-projects-container');
+                allContainers.forEach(function (c) {
+                    c.style.height = '0';
+                });
+
+              
+                if (!isActive) {
+                    box.classList.add('active'); 
+
+                    const projects = container.querySelector('.related-projects');
+                    const height = projects.offsetHeight; 
+                    container.style.height = height + 'px'; 
+                }
+            });
+        });
+    });
+
+</script>
+
+</html>

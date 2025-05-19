@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #f5eeee;
+
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgba(0, 0, 0, 0.903);
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin: 20px;
+            letter-spacing: 0.8px;
+            line-height: 1.2rem;
+        }
+
+        h3 {
+            padding: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 0.2fr 0.2fr 1fr 0.2fr;
+            gap: 20px;
+            background-color: rgba(0, 0, 0, 0.903);
+            padding-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+
+        }
+
+        #first .one {
+            background-color: goldenrod;
+
+
+        }
+
+        #first .two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 30px;
+        }
+
+        #first .three {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            padding: 15px;
+        }
+
+        #first .four {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: rgba(0, 0, 0, 0.903);
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.903);
+            /* padding: 10px; */
+        }
+
+        #navbar li {
+            background-color: rgba(0, 0, 0, 0.903);
+        }
+
+        #navbar li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            /* padding: 10px; */
+            display: block;
+            background-color: rgba(0, 0, 0, 0.903);
+
+        }
+
+        #second .one {
+            padding: 15px;
+        }
+
+        #second .two {
+            padding: 30px;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 30px;
+        }
+
+        .flexbox div {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        #third .one,
+        #third .two,
+        #third .four {
+            padding: 10px;
+        }
+
+        #fourth .two {
+            background-color: brown;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 30px;
+        }
+
+        #fourth .three .list {
+            /* max-width: 100%; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem;
+
+        }
+
+        
+
+        #fourth .four .files {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+            /* padding: 5px; */
+        }
+
+        #fourth .four .files li:nth-child(2) {
+            background-color: rgba(0, 0, 0, 0.903);
+            color: white;
+            padding: 5px;
+        }
+
+        #fifth .one {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 5px;
+            padding: 0;
+            padding-top: 5px;
+        }
+
+        #fifth .one .two{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        #fifth .one .two p {
+            
+            padding: 10px;
+            background-color: goldenrod;
+
+        }
+
+        #fifth .one .three,
+        #fifth .one .three p {
+            background-color: goldenrod;
+        }
+
+        #fifth .two,
+        #fifth .four {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 0px;
+            padding-top: 5px;
+           
+
+        }
+
+        #fifth .two .one,
+        #fifth .two .two,
+        #fifth .four .one,
+        #fifth .four .two {
+            height: 80px;
+        }
+
+        #fifth .two .three,
+        #fifth .four .three {
+            height: 50%;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        #fifth .three {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            padding-top: 5px;
+
+        }
+
+        #fifth .three .one .profile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            list-style: none;
+        }
+
+        #fifth .three .one .pages {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+      
+
+       
+    </style>
+</head>
+
+<body>
+    <header class="container" id="first">
+        <div class="one">
+
+        </div>
+        <div class="two">
+            <h1>Style Stage</h1>
+        </div>
+        <div class="three">
+            <h2>A modern CSS showcase styled by community contributions</h2>
+            <p>Maitained by <a href="">Stephanie Eckles </a> of <a href="">ModernCSS.dev</a></p>
+
+        </div>
+        <div class="four">
+            <a href="">Star on Github</a>
+        </div>
+
+    </header>
+    <nav>
+        <ul id="navbar">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Guidelines</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">All Styles</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article class="container" id="second">
+            <div class="one">
+                <h2>Setting the Stage</h2>
+            </div>
+            <div class="two">
+                <h2>Modern CSS Under the Spotlight</h2>
+            </div>
+            <div class="three">
+                <p>In 2003, Dave Shea began a legendary project called CSS Zen Garden that provided a demonstration of
+                    "what can be accomplished through CSS-based design" until submissions stopped in 2013.</p>
+                <p>Style Stage seeks to rekindle that spirit by providing this page as the base HTML for contributors -
+                    like you! - to re-style by submitting an alternate stylesheet.
+
+                </p>
+                <p>How it works: Visit the "All Styles" directory page and select a style to view. A page with identical
+                    content to this one will be presented with a new design provided from a contributed stylesheet. CSS
+                    practitioners of any skill level are invited to submit a stylesheet!</p>
+                <p>The HTML for this page was created to be semantic, accessible, and free of nearly all other opinions.
+                    Nested sectioning elements with the class `.container` serve as additional style aids since you do
+                    not have access to alter the base HTML. IDs are included where needed for nav anchors or
+                    accessibility, and a small number of additional classes are provided for key elements without IDs.
+                    Don't forget the `.skip-link`!</p>
+                <p>Modern CSS has increased and improved the available CSS properties and layout behaviors, and browser
+                    support is nearly in sync for most high-touch features.</p>
+                <p>Some examples of modern CSS include:</p>
+                <div class="flexbox">
+                    <div>Flexbox</div>
+                    <div>Grid</div>
+                    <div>custom variables</div>
+                    <div>@supports</div>
+                    <div>gradients</div>
+                    <div>animations</div>
+                    <div>3D transforms</div>
+                    <div>object-fit</div>
+                    <div>:focus-within</div>
+                    <div>cal()</div>
+                    <div>min()/max()/clamp()</div>
+                    <div>viewport units</div>
+                    <div>scroll-(margin/pading/snap)</div>
+                    <div>position:sticky</div>
+                    <div>two-value display</div>
+                    <div>expanded media query values</div>
+                    <div>variable fonts</div>
+                </div>
+                <p>We also collectively have an improved understanding of what it takes to make accessible improveements
+                </p>
+                <p>Join Style Stage as a contributoe to refreshyour CSS skills,and learn from others</p>
+            </div>
+            <div>
+
+            </div>
+
+
+        </article>
+
+        <article class="container" id="third">
+            <div class="one">
+                <h2>Guidelines</h2>
+            </div>
+            <div class="two">
+                <p>Contributing a stylesheet to Style Stage means you agree to abide by our full guidelines.</p>
+            </div>
+            <div class="three">
+                <h3>TL;DR</h3>
+                <p>All submissions will be autoprefixed and prepended with the CC BY-NC-SA license as well as
+                    attribution using the metadata you provide. You may use any build setup you prefer, but the final
+                    submission should be the compiled, unminified CSS. You retain the copyright to original graphics and
+                    must ensure all graphics used are appropriately licensed. All asset links, including fonts, must be
+                    absolute to external resources. Stylesheets will be saved into the Github repo, and detected changes
+                    that violate the guidelines are cause for removal.</p>
+                <p>Ensure your design is responsive, and that it passes accessible contrast (we'll be using aXe to
+                    verify). Animations should be removed via `prefers-reduced-motion`. Cutting-edge techniques should
+                    come with a fallback if needed to not severely impact the user experience. No content may be
+                    permanently hidden, and hidden items must come with an accessible viewing technique. Page load time
+                    should not exceed 3 seconds.</p>
+                <p>
+                    Most importantly - have fun and learn something new! Check out the resources for tips and
+                    inspiration.</p>
+            </div>
+            <div class="four">
+                <a href="">Review Full Guidelines</a>
+            </div>
+
+
+        </article>
+
+        <article class="container" id="fourth">
+            <div>
+
+            </div>
+            <div class="two">
+                <h2 style="background-color: brown;">Contribute</h2>
+                <h3 style="background-color: brown;">Steps to Contribute</h3>
+            </div>
+            <div class="three">
+                <p>All who enjoy the craft of writing CSS are welcome to contribute!
+
+                </p>
+                <p>By participating as a contributor, your work will be shared with your provided attribution as long as
+                    Style Stage is online, your stylesheet link and any asset links remain valid, and all contributor
+                    guidelines are adhered to.</p>
+                <ul class="list">
+                    <div>
+                        <li>Download the source files listed below to use as a reference to build your stylesheet, or
+                            start from the Sass template.</li>
+                    </div>
+                    <div>
+                        <li>Host your completed stylesheet at a public URL, and ensure all asset links are absolute URLs
+                            to external resources.</li>
+                    </div>
+                    <div>
+                        <li>Create a pull request to add your information as a unique .json file to: src/_data/styles.
+                            The schema is detailed in the repo README, and you can review the FAQ on creating a pull
+                            request.</li>
+                    </div>
+                    <div>
+                        <li>If your contribution abides by the previously listed guidelines, your submission will be
+                            added!</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="four">
+                <h3>Source Fiels</h3>
+                <ul class="files ">
+                    <li>Download CSS</li>
+                    <li>Download HTML</li>
+                    <li>Fork the Codepen</li>
+                </ul>
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer class="container" id="fifth">
+        <div class="one container">
+            <div class="one">
+                <h3>Currently Staged Style</h3>
+            </div>
+            <div class="two">
+                <div>
+                <p>Created and maintained by Stephanie Eckles (@5t3ph)</p>
+            </div>
+            </div>
+            <div class="three">
+                <p>Contact on Twitter</p>
+            </div>
+
+        </div>
+        <div class="two container">
+            <div class="one">
+
+            </div>
+            <div class="two">
+                <h2>Featured Styles</h2>
+            </div>
+            <div class="three">
+                <a href="Star on Github">Star on Github</a>
+            </div>
+
+        </div>
+        <div class="three container">
+            <div class="one">
+                <div>
+                    <ul class="profile">
+                        <li>Title:Trafalgar</li>
+                        <li>Author: Mike Andrewartha</li>
+                        <li>Twitter: <a href="">mandrewnz</a></li>
+                        <li>Website: <a href=""> Mike Andrewartha</a></li>
+
+                    </ul>
+
+                </div>
+                <div>
+                    <ul class="pages">
+                        <li><a href="">Moccasin Stage</a>by Gabriel Paixao</li>
+                        <li><a href="">Color Stages</a>by Claire Lipskey</li>
+                        <li><a href="">Artsy Blue and Turquoise</a>by Thea Kitzinger</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Crafted with semantic, accessible HTML and CSS, Style Stage is generated with 11ty and hosted on
+                        Netlify.
+                        This project uses PostCSS with autoprefixer.</p>
+                    <p>Contributors retain copyright of all graphics used, and styles are available under CC BY-NC-SA
+                    </p>
+
+                </div>
+            </div>
+            <div class="two ">
+                <div>
+                    <p>Crafted with semantic, accessible HTML and CSS, Style Stage is generated with 11ty and hosted on
+                        Netlify.
+                        This project uses PostCSS with autoprefixer.</p>
+                    <p>Contributors retain copyright of all graphics used, and styles are available under CC BY-NC-SA
+                    </p>
+                </div>
+                <!-- <div class="one">
+ 
+                     </div>
+                     <div class="two">
+
+                     </div>
+                     <div class="three">
+                        <a href="RSS Feed">RSS Feed</a>
+                     </div>
+                     <div class="four">
+
+                     </div> -->
+            </div>
+        </div>
+
+        <div class="four container">
+            <div class="one"><a href="">View Stylesheets</a></div>
+            <div class="two"><a href="">View all styles</a></div>
+            <div class="three"><a href="">Subscribe to updates</a></div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

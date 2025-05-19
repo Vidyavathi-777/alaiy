@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark-Navy & Green</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-div">
+        <h1>Style Stage</h1>
+        <h2>A modern CSS showcase styled by commuity contributes</h2>
+        <p>
+          Maintained by <a href="#">Stephanie Eckles</a> of
+          <a href="#">ModernCSS.dev</a>
+        </p>
+        <a href="#" id="btn">Star on Github</a>
+      </div>
+    </header>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Guidelines</a></li>
+        <li><a href="#">Contribute</a></li>
+        <li><a href="#">Files</a></li>
+        <li><a href="#">All Styles</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <article id="about">
+          <section class="sub-container">
+            <h2 >Setting the Stage</h2>
+            <p>
+              In 2003, <a href="#">Dave Shea</a> began a legendary project
+              called <a href="#">CSS Zen Garden</a> that provided a
+              demonstration of "what can be accomplished through CSS-based
+              design" until submissions stopped in 2013.
+            </p>
+
+            <p>
+              <span>Style Stage</span> seeks to rekindle that spirit by
+              providing this page as the base HTML for contributors - like you!
+              - to re-style by submitting an alternate stylesheet.
+            </p>
+
+            <div>
+              <p>
+                <span>How it works:</span> Visit the
+                <a href="#">"All Styles" </a>directory page and select a style
+                to view. A page with identical content to this one will be
+                presented with a new design provided from a contributed
+                stylesheet. CSS practitioners of any skill level are invited to
+                <a href="#">submit a stylesheet!</a>
+              </p>
+            </div>
+
+            <p>
+              The HTML for this page was created to be semantic, accessible, and
+              free of nearly all other opinions. Nested sectioning elements with
+              the class `.container` serve as additional style aids since you do
+              not have access to alter the base HTML. IDs are included where
+              needed for nav anchors or accessibility, and a small number of
+              additional classes are provided for key elements without IDs.
+              Don't forget the `.skip-link`!
+            </p>
+          </section>
+          <section class="sub-container">
+            <h2>Modern CSS Under the SPotilight</h2>
+            <p>
+              Modern CSS has increased and improved the available CSS properties
+              and layout behaviors, and browser support is nearly in sync for
+              most high-touch features.
+            </p>
+            <p>Some examples of modern CSS include:</p>
+            <ul>
+              <li>Flexbox</li>
+              <li>custom variables</li>
+              <li>gradients</li>
+              <li>3D transforms</li>
+              <li>:focus-within</li>
+              <li>min()/max()/clamp</li>
+              <li>scroll-(margin/padding/snap)</li>
+              <li>two-value display</li>
+              <li>variable fonts</li>
+              <li>Grid</li>
+              <li>@supports()</li>
+              <li>animation</li>
+              <li>object-fit</li>
+              <li>calc()</li>
+              <li>viewport units</li>
+              <li>position:sticky</li>
+              <li>expanded media query values</li>
+            </ul>
+            <p>
+              We also collectively have an improved understanding of what it
+              takes to make accessible experiences.
+            </p>
+            <p>
+              <a href="#">Join Style Stage as a contributor</a>to refresh your
+              CSS skills, and learn from others!
+            </p>
+          </section>
+        </article>
+        <article id="guidlines">
+          <section class="sub-container">
+          <h2>Guidelines</h2>
+          <p>
+            Contributing a stylesheet to Style Stage means you agree to abide by
+            <a href="#">our full guidelines</a>.
+          </p>
+          <h2>TL;DR</h2>
+          <p>
+            All submissions will be autoprefixed and prepended with the
+            <a href="#">CC BY-NC-SA license</a> as well as attribution using the
+            metadata you provide. You may use any build setup you prefer, but
+            the final submission should be the compiled, unminified CSS. You
+            retain the copyright to original graphics and must ensure all
+            graphics used are appropriately licensed. All asset links, including
+            fonts, must be absolute to external resources. Stylesheets will be
+            saved into the Github repo, and detected changes that violate the
+            guidelines are cause for removal.
+          </p>
+          <p>
+            Ensure your design is responsive, and that it passes accessible
+            contrast (we'll be using aXe to verify). Animations should be
+            removed via `prefers-reduced-motion`. Cutting-edge techniques should
+            come with a fallback if needed to not severely impact the user
+            experience. No content may be permanently hidden, and hidden items
+            must come with an accessible viewing technique. Page load time
+            should not exceed 3 seconds.
+          </p>
+          <p>
+            Most importantly - have fun and learn something new! Check out the
+            <a href="#">resources</a> for tips and inspiration.
+          </p>
+          <a href="#">Review full guidelines</a>
+        </section>
+        </article>
+        <article id="contribute">
+          <section class="sub-container">
+          <h2>Contribute</h2>
+          <p>
+            All who enjoy the craft of writing CSS are welcome to contribute!
+          </p>
+          <p>
+            By participating as a contributor, your work will be shared with
+            your provided attribution as long as Style Stage is online, your
+            stylesheet link and any asset links remain valid, and all
+            <a href="#">contributor guidelines</a> are adhered to.
+          </p>
+        </section>
+        <section class="sub-container">
+          <h3>Steps to Contribute</h3>
+          <ol>
+            <li>
+              Download the source files listed below to use as a reference to
+              build your stylesheet, or start from the Sass template.
+            </li>
+            <li>
+              Host your completed stylesheet at a public URL, and ensure all
+              asset links are absolute URLs to external resources.
+            </li>
+            <li>
+              <a href="#">Create a pull request</a> to add your information as a
+              unique .json file to: src/_data/styles. The schema is detailed in
+              the repo README, and you can review the FAQ on
+              <a href="#">creating a pull request</a>.
+            </li>
+            <li>
+              If your contribution abides by the previously listed guidelines,
+              your submission will be added!
+            </li>
+          </ol>
+        </section>
+
+          <section class="sub-container">
+            <h3>Source Files</h3>
+            <ul>
+              <li><a href="#">Download CSS</a></li>
+              <li><a href="#">Download HTML</a></li>
+              <li><a href="#">Fork the Codepen</a></li>
+            </ul>
+          </section>
+        </article>
+        <article class="profile">
+          <div class="sub-container">
+            <div>
+              <h3>Currently Staged Style</h3>
+              <ul>
+                <li>Title: Dark- Navy & Green</li>
+                <li>Author: Vishal Sharma</li>
+                <li>Twitter: <a href="#">iamvishal345</a></li>
+                <li>Website: <a href="#">CodeEntity.tech</a></li>
+              </ul>
+              <a href="#">view All Stles</a>
+            </div>
+          </div>
+        </article>
+        <article class="features">
+          <div class="sub-container">
+            <h2>Featured Styles</h2>
+            <div>
+              <div>
+                <div >
+                <a href="#">Moccasin Stage</a>
+                <p>by Gabriel Paixao</p>
+            </div>
+              </div>
+              <div>
+                <div>
+                <a href="#">Color Stages</a>
+                <p>byClaire Lipskey</p>
+            </div>
+              </div>
+              <div >
+                <div >
+                <a href="#">Artsy Blue and Turquoise</a>
+                <p>by the Kitzinger</p>
+            </div>
+              </div>
+            </div>
+            <a href="#">view All Stles</a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <article class="footer">
+        <div class="sub-container">
+          <p>
+            Created and maintained by <a href="#">Stephanie Eckles(@5t3ph)</a>
+          </p>
+          <div>
+            <a href="#">Contack on Twitter</a>
+            <a href="#">Star on Github</a>
+            <a href="#">RSS Feed</a>
+            <a href="#">Subscribe to Updates</a>
+          </div>
+          <p>
+            Crafted with semantic, accessible HTML and CSS,<a href="#">
+              Style Stage</a
+            >
+            is generated with <a href="#">11ty</a> and hosted on
+            <a href="#">Netlify</a>. This project uses
+            <a href="#">PostCSS</a> with <a href="#">autoprefixer</a>.
+          </p>
+          <p>
+            Contributors retain copyright of all graphics used, and styles are
+            available under <a href="#">CC BY-NC-SA</a>
+          </p>
+        </div>
+      </article>
+    </footer>
+  </body>
+</html>

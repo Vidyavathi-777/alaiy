@@ -1,0 +1,1 @@
+store-selector-popover::backdrop{background-color:#00000059;backdrop-filter:blur(5px);pointer-events:auto}:has(store-selector-popover[popover]:popover-open){pointer-events:none}store-selector-popover[popover]:popover-open{pointer-events:auto}
