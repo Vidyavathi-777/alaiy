@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* background-color: #23272d; */
+}
+
+header{
+  background-color: #1e1e25;
+}
+nav{
+  border: #1e1e25;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+
+}
+.title{
+  color: #82cbe0;
+  padding: 20px;
+  font-size: 40px;
+}
+
+main{
+  background-color: #23272d ;
+  height: 100vh;
+  color: aliceblue;
+
+}
+
+.body-title{
+  font-size: 50px;
+  padding: 40px 50px;
+
+}
+
+.list-div{
+  padding: 30px;
+  padding-left: 120px;
+}
+
+.list-div li {
+  font-size: 25px;
+  padding: 10px;
+  margin-right: 30px;
+}
+.list-div li::marker{
+  color: #00c8ff;
+  
+}
