@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "/home/jtd/Documents/react/project-1/src/assets/react.svg"
+import logo from "/home/jtd/Documents/alaiy-practice-projects/react/staticpage/src/assets/react.svg"
 
 const Maincomponent = () => {
     return (
