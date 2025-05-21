@@ -1,16 +1,28 @@
 import React from 'react'
 import logo from "/home/jtd/Documents/alaiy-practice-projects/react/staticpage/src/assets/react.svg"
 
-const Maincomponent = () => {
+const Maincomponent = (props) => {
     return (
         <div>
             <header>
-                <nav>
+                <nav className={props.darkMode ? "dark" : ""}>
+                    
                     <img src={logo} alt="" width="50px" className='logo' />
                     <h2 className='title'>ReactFacts</h2>
+                    <div className="toggler">
+                        <p className="toggler-light">Light</p>
+                        <div className="toggler-slider" onClick={props.toggleDarkMode}>
+                            <div className='toggler-slider-circle'>
+
+                            </div>
+
+
+                        </div>
+                        <p className="toggler-dark">Dark</p>
+                    </div>
                 </nav>
             </header>
-            <main>
+            <main className={props.darkMode ? "dark" : ""}>
 
                 <h1 className='body-title'>Fun facts about React</h1>
                 <ul className='list-div'>

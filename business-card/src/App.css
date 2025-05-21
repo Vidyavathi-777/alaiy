@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* background-color: hwb(0 10% 89%); */
+}
+
+.card{
+  width: 100%;
+  max-width: 500px;
+  background-color: #23252c;
+  height: 90vh;
+  border-radius: 10px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin:50px auto;
+}
+
+.header-container{
+  width: 100%;
+  /* height: 100%; */
+
+
+}
+.img-container {
+  border-radius: 10px;
+  width: 100%;
+  background-image: url("/home/jtd/Documents/alaiy-practice-projects/business-card/src/assets/profileimg.png");
+  background-repeat: no-repeat;
+  background-position: 10% 25%;
+  background-size: cover;
+  height: 350px;
+}
+
+
+.details{
+  text-align: center;
+}
+.details h2{
+  color: white;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+.details .job{
+  color: #f3bf99;
+  padding-top: 5px;
+}
+
+.details .website{
+  color: white;
+  font-size: 0.8rem;
+  padding-top: 5px;
+}
+
+.social-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 10px;
+  /* width: 500px; */
+}
+
+.social-buttons .email-btn{
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.social-buttons .linkedin-btn{
+  width: 150px;
+  padding: 10px ;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #5093e2;
+  font-size: 1rem;
+}
+
+.social-buttons i{
+  padding-right: 10px;
+}
+
+.content-container{
+  color: white;
+  padding: 20px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; */
+}
+
+.content-details{
+  padding-top: 20px;
+  width: 450px;
+}
+.content-details p{
+  color: rgb(204, 199, 199);
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 50px;
+  background-color: #000;
+  color: gray;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}

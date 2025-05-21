@@ -37,7 +37,8 @@ const Meme = () => {
     return (
         <main>
             <div className='form'>
-                <label>
+                <div className="inputs-containers">
+                    <label>
                     Top Text</label>
                     <input
                         type='text'
@@ -48,6 +49,8 @@ const Meme = () => {
                         onChange={handleChange}
                     />
                 
+                </div>
+                <div className="">
                 <label>
                     Bottom Text </label>
                     <input
@@ -58,9 +61,11 @@ const Meme = () => {
                         value={meme.bottomText}
                         onChange={handleChange}
                     />
-               
-                <button className='form-button' onClick={getMemeImage} >Get a new meme image </button>
+                    </div>
+            
             </div>
+            <div className="button-div"><button className='form-button' onClick={getMemeImage} >Get a new meme image </button></div>
+            
             <div className='meme'>
                 <img src={meme.randomImage} />
                 <span className='top'>{meme.topText}</span>
