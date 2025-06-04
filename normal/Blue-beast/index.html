@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div >
+        <section class="header">
+            <div class="header-one">
+                <h1>STYLE STAGE</h1>
+                <h3>A modern CSS showcase Styled by community contributions</h3>
+                <p>Maintained by <span>Stephanie Eckles</span>of <span>MOdernCSS.dev</span></p>
+                <button class="star-btn">STAR ON GITHUB</button>
+            </div>
+           
+
+        </section>
+         <div class="nav">
+             
+                    <ul>
+                        <li>About</li>
+                        <li>Guidelines</li>
+                        <li>Contribute</li>
+                        <li>Files</li>
+                        <li>All Styles</li>
+                        <li>Resources</li>
+                    </ul>
+             
+            </div>
+        <section class="main">
+            <div class="one">
+                <h2>Setting the Stage</h2>
+                <p>In 2003, Dave Shea began a legendary project called CSS Zen Garden that provided a demonstration of "what can be accomplished through CSS-based design" until submissions stopped in 2013.</p>
+                <p>Style Stage seeks to rekindle that spirit by providing this page as the base HTML for contributors - like you! - to re-style by submitting an alternate stylesheet.</p>
+                <p>How it works: Visit the "All Styles" directory page and select a style to view. A page with identical content to this one will be presented with a new design provided from a contributed stylesheet. CSS practitioners of any skill level are invited to submit a stylesheet!</p>
+                <p>The HTML for this page was created to be semantic, accessible, and free of nearly all other opinions. Nested sectioning elements with the class `.container` serve as additional style aids since you do not have access to alter the base HTML. IDs are included where needed for nav anchors or accessibility, and a small number of additional classes are provided for key elements without IDs. Don't forget the `.skip-link`!</p>
+            </div>
+            <div class="two">
+                <h2>Modern CSS Under the Spotilight</h2>
+                <p>Modern CSS has increased and improved the available CSS properties and layout behaviors, and browser support is nearly in sync for most high-touch features.</p>
+                <p>Some examples of modern CSS include:</p>
+                <div class="grid">
+                    <ul>
+                        <li>Flexbox</li>
+                        <li>Grid</li>
+                        <li>Cutom Variables</li>
+                        <li>@Supports()</li>
+                        <li>gradients</li>
+                        <li>Animation</li>
+                        <li>3D transforms</li>
+                        <li>Object-fit</li>
+                        <li>:Focus-within</li>
+                        <li>Calc()</li>
+                        <li>min()/max()/clamp()</li>
+                        <li>Viewport Unit</li>
+                        <li>Scroll-(Margin/padding/sanp)</li>
+                        <li>Poition:Sticky</li>
+                        <li>Two-value Dispaly</li>
+                        <li>Expanded Media Queries</li>
+                        <li>Variable Fonts</li>
+                    </ul>
+                </div>
+                <p>We also collectively have an improved understanding of what it takes to make accessible experiences.</p>
+                <p>Join Style Stage as a contributor to refresh your CSS skills, and learn from others!</p>
+            </div>
+            <div>
+                <h2>Guidelines</h2>
+                <p>Contributing a stylesheet to Style Stage means you agree to abide by our full guidelines.</p>
+            </div>
+            <div>
+                <h2>TL;DR</h2>
+                <p>All submissions will be autoprefixed and prepended with the CC BY-NC-SA license as well as attribution using the metadata you provide. You may use any build setup you prefer, but the final submission should be the compiled, unminified CSS. You retain the copyright to original graphics and must ensure all graphics used are appropriately licensed. All asset links, including fonts, must be absolute to external resources. Stylesheets will be saved into the Github repo, and detected changes that violate the guidelines are cause for removal.</p>
+                <p>Ensure your design is responsive, and that it passes accessible contrast (we'll be using aXe to verify). Animations should be removed via `prefers-reduced-motion`. Cutting-edge techniques should come with a fallback if needed to not severely impact the user experience. No content may be permanently hidden, and hidden items must come with an accessible viewing technique. Page load time should not exceed 3 seconds.</p>
+                <p>Most importantly - have fun and learn something new! Check out the resources for tips and inspiration.</p>
+                <button class="btn">Review Full Guidelines</button>
+            </div>
+            <div>
+                <h2>Contribute</h2>
+                <p>All who enjoy the craft of writing CSS are welcome to contribute!</p>
+                <p>By participating as a contributor, your work will be shared with your provided attribution as long as Style Stage is online, your</p>
+                <p>stylesheet link and any asset links remain valid, and all contributor guidelines are adhered to.</p>
+            </div>
+            <div class="steps">
+                <h2>Steps to Contribute</h2>
+                <ol>
+                    <li>Download the source files listed below to use as a reference to build your stylesheet, or start from the Sass template.</li>
+                    <li>Host your completed stylesheet at a public URL, and ensure all asset links are absolute URLs to external resources.</li>
+                    <li>Create a pull request to add your information as a unique .json file to: src/_data/styles. The schema is detailed in the repo README, and you can review the FAQ on creating a pull request.</li>
+                    <li>If your contribution abides by the previously listed guidelines, your submission will be added!</li>
+                </ol>
+            </div>
+           <div class="profile">
+            <h1>Source Files</h1>
+            <div>
+                <button class="btn">Download CSS</button>
+                <button class="btn">Download HTMl</button>
+                <button class="btn">Fork the Codepen</button>
+            </div>
+            <div class="box">
+                <h1>Currently Staged Style</h1>
+                <p><span>Title:</span>Blue-Beast</p>
+                <p><span>Author:</span>Kiran Shrinivas S</p>
+                <span>View Stylesheet</span>
+            </div>
+            <div class="box">
+                <h1>Featured Styles</h1>
+                <p><span>Moccasin Stage</span>by Gabriel Paixao</p>
+                <p><span>Color Stages</span>by Clarie Lipskey</p>
+            </div>
+
+           </div>
+        </section>
+        <footer>
+            <p>Created and maintained by Stephanie Eckles (@5t3ph)</p>
+            <div>
+                <button class="btn">Contact on twitter</button>
+                <button class="btn">Star on github</button>
+                <button class="btn">  RSS FEEd</button>
+                <button class="btn">Subscribe to updates</button>
+            </div>
+            <p>Crafted with semantic, accessible HTML and CSS, Style Stage is generated with 11ty and hosted on Netlify. This project uses PostCSS with autoprefixer.</p>
+            <p>Contributors retain copyright of all graphics used, and styles are available under CC BY-NC-SA</p>
+        </footer>
+    </div>
+</body>
+</html>
